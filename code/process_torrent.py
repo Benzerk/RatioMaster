@@ -100,7 +100,7 @@ class process_torrent():
             print('----------- Sending Command to Tracker --------')
 
             # get upload
-            min_up = self.interval-(self.interval*0.1)
+            min_up = int(self.interval*0.9)
             max_up = self.interval
             randomize_upload = random.randint(min_up, max_up)
             uploaded = int(self.configuration['upload'])*1000*randomize_upload
