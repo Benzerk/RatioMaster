@@ -10,7 +10,7 @@ class qBitorrent505():
         # urlencoded 20-byte string used as a unique ID for the client
         parameters["peer_id"] = self.generate_peer_id()
         # The port number that the client is listening on
-        parameters["port"] = random.randint(1025, 65535)
+        parameters["port"] = 23586 # random.randint(1025, 65535)
         # Number of peers that the client would like to receive from the tracker
         parameters["numwant"] = 80
         # An additional identification that is not shared with any other peers
